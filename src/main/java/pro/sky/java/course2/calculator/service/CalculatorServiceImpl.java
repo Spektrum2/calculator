@@ -10,29 +10,22 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     @Override
-    public String plus(int num1, int num2) {
-        int total = num1 + num2;
-        return num1 + " + " + num2 + " = " + total;
+    public int plus(int num1, int num2) {
+        return num1 + num2;
     }
 
     @Override
-    public String minus(int num1, int num2) {
-        int total = num1 - num2;
-        return num1 + " - " + num2 + " = " + total;
+    public int minus(int num1, int num2) {
+        return num1 - num2;
     }
 
     @Override
-    public String multiply(int num1, int num2) {
-        int total = num1 * num2;
-        return num1 + " * " + num2 + " = " + total;
+    public int multiply(int num1, int num2) {
+        return num1 * num2;
     }
 
     @Override
-    public String divide(double num1, double num2) {
-        if (num1 == 0 || num2 == 0) {
-            return "Ошибка ввода. Значение не должно быть равно нулю!";
-        }
-        double total = num1 / num2;
-        return num1 + " / " + num2 + " = " + total;
+    public double divide(double num1, double num2) {
+        return num1 / num2;
     }
 }
