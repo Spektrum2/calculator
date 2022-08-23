@@ -25,49 +25,42 @@ public class CalculatorServiceImplTest {
     public void shouldReturnThreeWhenPlusTwoAndOne() {
         int result = out.plus(TWO, ONE);
         assertEquals(TWO + ONE, result);
-
     }
 
     @Test
     public void shouldReturnTwoWhenMinusThreeAndOne() {
         int result = out.minus(THREE, ONE);
         assertEquals(THREE - ONE, result);
-
     }
 
     @Test
     public void shouldReturnOneWhenMinusTwoAndOne() {
         int result = out.minus(TWO, ONE);
         assertEquals(TWO - ONE, result);
-
     }
 
     @Test
     public void shouldReturnThreeWhenMultiplyOneAndThree() {
         int result = out.multiply(ONE, THREE);
         assertEquals(ONE * THREE, result);
-
     }
 
     @Test
     public void shouldReturnSixWhenMultiplyTwoAndOne() {
         int result = out.multiply(TWO, THREE);
         assertEquals(TWO * THREE, result);
-
     }
 
     @Test
     public void shouldReturnResultWhenDivideOneAndThree() {
         double result = out.divide(ONE, THREE);
         assertEquals((double) ONE / THREE, result);
-
     }
 
     @Test
     public void shouldReturnResultWhenDivideTwoAndOne() {
         double result = out.divide(TWO, ONE);
         assertEquals((double) TWO / ONE, result);
-
     }
 
     @Test
