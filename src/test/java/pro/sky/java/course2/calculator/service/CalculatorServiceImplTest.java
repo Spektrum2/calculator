@@ -2,6 +2,7 @@ package pro.sky.java.course2.calculator.service;
 
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static pro.sky.java.course2.calculator.constants.CalculatorServiceImplTestConstants.*;
 
@@ -10,8 +11,8 @@ public class CalculatorServiceImplTest {
 
     @Test
     public void shouldReturnWelcomeMessage() {
-        String result = out.welcome();
-        assertEquals(WELCOME, result);
+        String actual = out.welcome();
+        assertThat(actual).isEqualTo(WELCOME);
     }
 
     @Test
