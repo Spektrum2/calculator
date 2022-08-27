@@ -3,6 +3,7 @@ package pro.sky.java.course2.calculator.service;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatExceptionOfType;
 import static org.junit.jupiter.api.Assertions.*;
 import static pro.sky.java.course2.calculator.constants.CalculatorServiceImplTestConstants.*;
 
@@ -69,5 +70,8 @@ public class CalculatorServiceImplTest {
         assertThrows(IllegalArgumentException.class,
                 () -> out.divide(TWO, ZERO)
         );
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> out.divide(3, 0))
+                .withMessage("Ошибка ввода. Значение не должно быть равно нулю!");
     }
 }
