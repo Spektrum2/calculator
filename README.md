@@ -30,21 +30,21 @@
 ### При выполнении задания важно учесть
 
 <aside>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37631ca-3d1e-4606-a1c6-56f17f3d1ee0/Снимок_экрана_2022-01-20_в_15.12.50.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f37631ca-3d1e-4606-a1c6-56f17f3d1ee0/Снимок_экрана_2022-01-20_в_15.12.50.png" width="40px" /> /calculator повторяется. Рекомендуется использовать @RequestMapping на уровне контроллера.
+ /calculator повторяется. Рекомендуется использовать @RequestMapping на уровне контроллера.
 
 </aside>
 
 <aside>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b05e69c-55db-43e4-a861-8540b1561603/Снимок_экрана_2022-01-20_в_15.12.50.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b05e69c-55db-43e4-a861-8540b1561603/Снимок_экрана_2022-01-20_в_15.12.50.png" width="40px" /> Деление на 0 в Java выкидывает ошибку.
+Деление на 0 в Java выкидывает ошибку.
 
 </aside>
 
 <aside>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e88ef99-2227-46f2-ba2a-ad65a4726a71/Снимок_экрана_2022-01-20_в_15.12.50.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e88ef99-2227-46f2-ba2a-ad65a4726a71/Снимок_экрана_2022-01-20_в_15.12.50.png" width="40px" /> Если какой-то из двух параметров (или оба) не поданы, нужно вернуть ошибку.
+Если какой-то из двух параметров (или оба) не поданы, нужно вернуть ошибку.
 
 </aside>
 
 <aside>
-<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1dd53c13-af8f-43ef-8fb3-981e91591bf7/Снимок_экрана_2022-01-20_в_15.12.50.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1dd53c13-af8f-43ef-8fb3-981e91591bf7/Снимок_экрана_2022-01-20_в_15.12.50.png" width="40px" /> Контроллер не должен вычислять результат, а только делегировать его вычисление сервису. После получения от него результата контроллер должен сформировать строку и вернуть пользователю в браузер.
+Контроллер не должен вычислять результат, а только делегировать его вычисление сервису. После получения от него результата контроллер должен сформировать строку и вернуть пользователю в браузер.
 
 </aside>
