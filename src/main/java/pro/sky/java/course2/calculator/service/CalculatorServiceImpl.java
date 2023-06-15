@@ -1,6 +1,7 @@
 package pro.sky.java.course2.calculator.service;
 
 import org.springframework.stereotype.Service;
+import pro.sky.java.course2.calculator.exception.DivideByZeroException;
 
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
@@ -25,7 +26,10 @@ public class CalculatorServiceImpl implements CalculatorService {
     }
 
     @Override
-    public double divide(double num1, double num2) {
-        return num1 / num2;
+    public double divide(int num1, int num2) {
+        if (num2 == 0) {
+            throw new DivideByZeroException("Ошибка ввода. Значение не должно быть равно нулю!");
+        }
+        return (double) num1 / num2;
     }
 }
